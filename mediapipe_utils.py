@@ -2,11 +2,10 @@ import mediapipe as mp
 import numpy as np
 import cv2
 
-mp_hands = mp.solutions.hands
-mp_pose = mp.solutions.pose
+from mediapipe.solutions import hands, pose
 
-hands = mp_hands.Hands(max_num_hands=2)
-pose = mp_pose.Pose()
+hands = hands.Hands(max_num_hands=2)
+pose = pose.Pose()
 
 HAND_SIZE = 21 * 3 * 2
 POSE_SIZE = 33 * 4
