@@ -2,7 +2,8 @@ import mediapipe as mp
 import numpy as np
 import cv2
 
-from mediapipe.solutions import hands, pose
+import mediapipe.solutions.hands as hands
+import mediapipe.solutions.pose as pose
 
 hands = hands.Hands(max_num_hands=2)
 pose = pose.Pose()
